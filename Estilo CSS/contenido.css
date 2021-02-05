@@ -1,0 +1,155 @@
+body {
+    background: black;
+} /* Definimos un fondo para la pagina */
+
+h1 {
+    font-size: 40px; /* Definimos tamaño a la letra */
+    font-family: segoe print;
+    text-align: center;
+    color: salmon;
+} 
+
+
+.parrafo_2 {
+    font-family: cursive;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.parrafo_3 {
+    font-family: cursive;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.parrafo_4 {
+    font-family: cursive;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    letter-spacing: 1px;
+}   
+
+
+.titulo_parrafo {
+    font-size: 30px;
+    font-family: segoe print;
+    text-align: center;
+    color: salmon;
+}
+
+.parrafo_herramientas {
+    font-size: 20px;
+    font-family: cursive;
+    text-align: justify;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.imagen {
+    margin: 50px 0px 50px 70px;
+
+}
+
+.titulo_lista {
+    font-size: 30px;
+    font-family: segoe print;
+    text-align: center;
+    color: salmon;
+}
+
+.parrafo_lista {
+    font-size: 20px;
+    font-family: cursive;
+    text-align: justify;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.padre_2 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 50px);
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.hijo_1 {
+    grid-row: 1/4;
+    grid-column: 1/5;
+}
+
+.hijo_2 {
+    grid-row: 4/8;
+    grid-column: 4/8;
+}
+
+.hijo_3 {
+    grid-row: 1/4;
+    grid-column: 5/8;
+}
+
+.hijo_4 {
+    grid-row: 1/5;
+    grid-column: 8/11;
+}
+
+.hijo_5 {
+    grid-row: 5/8;
+    grid-column: 8/11;
+}
+
+.hijo_6 {
+    grid-row: 8/11;
+    grid-column: 7/11;
+}
+
+.hijo_7 {
+    grid-row: 8/11;
+    grid-column: 4/7;
+}
+
+.hijo_8 {
+    grid-row: 7/11;
+    grid-column: 1/4;
+}
+
+.hijo_9 {
+    grid-row: 4/7;
+    grid-column: 1/4;
+}
+
+.padre_2 {
+    margin: 100px 0px 70px 0px;
+    
+}
+
+#boton {
+    background: salmon;
+    color: black;
+}
+
+.iconos_redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.texto_footer {
+    font-family: segoe print;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+/* Animación para el collage de imagenes */
+.padre_2 div:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}

@@ -1,0 +1,200 @@
+/* Establecemos un color de fondo para mi pagina */
+body {
+    background: rgb(70, 70, 170) !important;
+}
+
+
+/* Establecemos un fondo para la barra de navegación */
+.barra {
+    background:rgb(146, 125, 125) !important; 
+}
+
+
+/* Establecemos un color para la letra de la barra nevagación */
+.inicio {
+    color: salmon !important; 
+}
+
+
+/* Establecemos propiedades para las imagenes del Slider */
+.slider_portada {
+    width: 100%; /* Ancho para que la imagen ocupe todo el espacio de la cajita */
+    height: 600px; /* Alto  */
+    margin: auto; /* Automaticmente me define el tamaño de los elementos */
+    list-style: none; /* Le quitamos las viñetas de la lista */
+    position: relative; /* Las imagenes no se posicionan al flujo normal de la pagina, sino que se organizan a la derecha */
+    display: flex; /* Caja flexible para que me deje acomodar los elementos */
+    justify-content: center; /* Todo el contenido van a estar en el centro. funciona con display: flex; */
+    align-items: flex-end; /* Los elementos se alinean verticalmente en la parte inferior */
+}
+
+.slider_portada img {
+    position: absolute; /* Las imagenes se van acomodar una encima de otra */
+    top: 0; /* Coordenadas para que se me ubiquen segun el ancestro; slider_portada */
+    left: 0; /*                               "                                    */
+    width: 100%; /* la imagen ocupa todo el espacio de la caja/contenedor */
+    height: 100%; /*                        "                            */
+    opacity: 0; /* Me aplica un nivel de transparencia para esconder las imagenes */ 
+    transition: all 0.75s; /* Me aplica una animación para las imagenes */
+}
+
+/* Los corchetes cuadrados deben ir seguido del atributo porque de lo contrario no funcionaria la regla que vamos a establecer */
+.slider_portada input[type="radio"] {
+    position: relative; /* Los botoncitos se van a posicionar sin un flujo normal */
+    z-index: 100; /* Controla que elemento iría encima y cual debajo */
+    margin: 10px; /* Los botoncitos se van a separar porque estan muy unidos */
+}
+
+/* Para los botoncitos */
+.slider_portada input[type="radio"]:checked ~ img {
+    opacity: 1; /* Las imagenes aparezca cuando le demos click a los botoncitos */
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .slider_portada {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+/* Dispositivos pequeños */
+@media (min-width: 600px) {
+    .slider_portada {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+/* Dispositivos medianos */
+@media (min-width: 768px) {
+    .slider_portada {
+        width: 100%;
+        height: 420px;
+    }
+}
+
+
+/* Dispositivos grandes */
+@media (width: 992px) {
+    .slider_portada {
+        width: 100%;
+        height: 440px;
+    }
+}
+
+
+/* Dispositivos muy grandes */
+@media (min-width: 1200px) {
+    .slider_portada {
+        width: 100%;
+        height: 800px; /* Entre más grandes los dispositivos la altura va cambiando a un poco más grande */
+    }
+}
+
+
+/* Propiedad para el video de you tube */
+.multimedia {
+    margin-top: 50px; /* Establecemos un espacio en la parte de arriba del video */
+}
+
+
+/* Propiedades para el GRID */
+.padre_3 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 50px);
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.hijo-1 {
+    grid-row: 1/4;
+    grid-column: 7/11;
+}
+
+.hijo-2 {
+    grid-row: 1/4;
+    grid-column: 4/7;
+}
+
+.hijo-3 {
+    grid-row: 1/5;
+    grid-column: 1/4;
+}
+
+.hijo-4 {
+    grid-row: 5/8;
+    grid-column: 1/4;
+}
+
+.hijo-5 {
+    grid-row: 8/11;
+    grid-column: 1/5;
+}
+
+.hijo-6 {
+    grid-row: 8/11;
+    grid-column: 5/8;
+}
+
+.hijo-7 {
+    grid-row: 7/11;
+    grid-column: 8/11;
+}
+
+.hijo-8 {
+    grid-row: 4/7;
+    grid-column: 8/11;
+}
+
+.hijo-9 {
+    grid-row: 4/8;
+    grid-column: 4/8;
+}
+
+/* Animación para el collage de imagenes */
+.padre_3 div:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* Propiedades para las imagenes del footer */
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+/* Establecemos propiedades para el titulo */
+h1 {
+    font-size: 40px;
+    font-family: segoe print;
+    text-align: center;
+    color: cyan;
+}
+
+
+/* Establecemos propiedades para el parrafo */
+.parrafo-comp {
+    font-family: cursive;
+    font-size: 20px;
+    text-align: justify;
+    color:black;
+    letter-spacing: 1px;
+}
+
+
+/* Establecemos propiedades para el footer */
+.footer {
+    font-family: segoe print;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}

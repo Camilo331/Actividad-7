@@ -1,0 +1,95 @@
+body {
+    background:cyan;
+}
+
+.titulo1 {
+    font-size: 40px;
+    font-family: segoe print;
+    text-align: center;
+    color:darkred;
+}
+
+.parrafo1 {
+    font-size: 20px;
+    font-family: cursive;
+    text-align: justify;
+    color:black;
+    letter-spacing: 1px;
+}
+
+.titulo2 {
+    font-size: 30px;
+    font-family: segoe print;
+    text-align: center;
+    color: darkred;
+}
+
+.parrafo2 {
+    font-size: 20px;
+    font-family: cursive;
+    text-align: justify;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.titulo3 {
+    font-size: 30px;
+    font-family: segoe print;
+    text-align: center;
+    color: darkred;
+}
+
+.parrafo3 {
+    font-size: 20px;
+    font-family: cursive;
+    text-align: justify;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.titulo4 {
+    font-size: 30px;
+    font-family: segoe print;
+    text-align: center;
+    color: darkred;
+}
+
+.parrafo4 {
+    font-size: 20px;
+    font-family: cursive;
+    text-align: justify;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.lista {
+    font-size: 20px;
+    font-family: cursive;
+    text-align: justify;
+    color: black;
+    letter-spacing: ;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+
+.redes_sociales {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.footer {
+    font-family: segoe print;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+.interior {
+    width: 560px;
+    height: 450px;
+}
